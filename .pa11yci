@@ -1,0 +1,20 @@
+{
+    "defaults": {
+        "timeout": 7000,
+        "hideElements": [
+            ".main-header", ".page-footer"
+        ],
+        "reporters": [
+            "cli",
+            ["json", { "fileName": "./results.json" }]
+        ],
+        "ignore": [
+            "notice",
+            "warning"
+        ],
+        "runners": ["axe"]
+    },
+    "urls": [
+        "https://www.internetsociety.org/"
+    ]
+}

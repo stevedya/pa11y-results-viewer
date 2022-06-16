@@ -1,0 +1,219 @@
+{
+    "total": 1,
+    "passes": 0,
+    "errors": 14,
+    "results": {
+        "https://www.internetsociety.org/": [
+            {
+                "code": "color-contrast",
+                "type": "error",
+                "typeCode": 1,
+                "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI)",
+                "context": "<button id=\"onetrust-pc-btn-handler\">Cookies Settings</button>",
+                "selector": "#onetrust-pc-btn-handler",
+                "runner": "axe",
+                "runnerExtras": {
+                    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+                    "impact": "serious",
+                    "help": "Elements must have sufficient color contrast",
+                    "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI"
+                }
+            },
+            {
+                "code": "color-contrast",
+                "type": "error",
+                "typeCode": 1,
+                "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI)",
+                "context": "<button id=\"onetrust-reject-all-handler\">Reject Optional Cookies</button>",
+                "selector": "#onetrust-reject-all-handler",
+                "runner": "axe",
+                "runnerExtras": {
+                    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+                    "impact": "serious",
+                    "help": "Elements must have sufficient color contrast",
+                    "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI"
+                }
+            },
+            {
+                "code": "color-contrast",
+                "type": "error",
+                "typeCode": 1,
+                "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI)",
+                "context": "<button id=\"onetrust-accept-btn-handler\">Accept All Cookies</button>",
+                "selector": "#onetrust-accept-btn-handler",
+                "runner": "axe",
+                "runnerExtras": {
+                    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+                    "impact": "serious",
+                    "help": "Elements must have sufficient color contrast",
+                    "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI"
+                }
+            },
+            {
+                "code": "color-contrast",
+                "type": "error",
+                "typeCode": 1,
+                "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI)",
+                "context": "<span style=\"line-height: 1.4;\">We believe in a world where the...</span>",
+                "selector": "html > body > div:nth-child(9) > main > section:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > h2 > span",
+                "runner": "axe",
+                "runnerExtras": {
+                    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+                    "impact": "serious",
+                    "help": "Elements must have sufficient color contrast",
+                    "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI"
+                }
+            },
+            {
+                "code": "color-contrast",
+                "type": "error",
+                "typeCode": 1,
+                "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI)",
+                "context": "<h5 class=\"uagb-ifb-title\">We help grow the Internet.<br></h5>",
+                "selector": "html > body > div:nth-child(9) > main > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div > div > div > div:nth-child(1) > h5",
+                "runner": "axe",
+                "runnerExtras": {
+                    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+                    "impact": "serious",
+                    "help": "Elements must have sufficient color contrast",
+                    "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI"
+                }
+            },
+            {
+                "code": "color-contrast",
+                "type": "error",
+                "typeCode": 1,
+                "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI)",
+                "context": "<p class=\"uagb-ifb-desc\">Nearly half the world’s populat...</p>",
+                "selector": "html > body > div:nth-child(9) > main > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div > div > div > div:nth-child(2) > p",
+                "runner": "axe",
+                "runnerExtras": {
+                    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+                    "impact": "serious",
+                    "help": "Elements must have sufficient color contrast",
+                    "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI"
+                }
+            },
+            {
+                "code": "color-contrast",
+                "type": "error",
+                "typeCode": 1,
+                "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI)",
+                "context": "<h5 class=\"uagb-ifb-title\">We make the Internet stronger.</h5>",
+                "selector": "html > body > div:nth-child(9) > main > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div > div > div > div:nth-child(1) > h5",
+                "runner": "axe",
+                "runnerExtras": {
+                    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+                    "impact": "serious",
+                    "help": "Elements must have sufficient color contrast",
+                    "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI"
+                }
+            },
+            {
+                "code": "color-contrast",
+                "type": "error",
+                "typeCode": 1,
+                "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI)",
+                "context": "<p class=\"uagb-ifb-desc\">We advocate for a secure, trust...</p>",
+                "selector": "html > body > div:nth-child(9) > main > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div > div > div > div:nth-child(2) > p",
+                "runner": "axe",
+                "runnerExtras": {
+                    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+                    "impact": "serious",
+                    "help": "Elements must have sufficient color contrast",
+                    "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI"
+                }
+            },
+            {
+                "code": "color-contrast",
+                "type": "error",
+                "typeCode": 1,
+                "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI)",
+                "context": "<h5 class=\"uagb-ifb-title\">We shape the Internet of the fu...</h5>",
+                "selector": "html > body > div:nth-child(9) > main > div:nth-child(3) > div:nth-child(6) > div:nth-child(3) > div > div > div > div:nth-child(1) > h5",
+                "runner": "axe",
+                "runnerExtras": {
+                    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+                    "impact": "serious",
+                    "help": "Elements must have sufficient color contrast",
+                    "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI"
+                }
+            },
+            {
+                "code": "color-contrast",
+                "type": "error",
+                "typeCode": 1,
+                "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI)",
+                "context": "<p class=\"uagb-ifb-desc\">We are a global movement that c...</p>",
+                "selector": "html > body > div:nth-child(9) > main > div:nth-child(3) > div:nth-child(6) > div:nth-child(3) > div > div > div > div:nth-child(2) > p",
+                "runner": "axe",
+                "runnerExtras": {
+                    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+                    "impact": "serious",
+                    "help": "Elements must have sufficient color contrast",
+                    "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI"
+                }
+            },
+            {
+                "code": "color-contrast",
+                "type": "error",
+                "typeCode": 1,
+                "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI)",
+                "context": "<a class=\"wp-block-button__link has-neutral-white-color has-text-color\" href=\"/blog/\">Read Our Blog</a>",
+                "selector": "html > body > div:nth-child(9) > main > section:nth-child(6) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div > div > a",
+                "runner": "axe",
+                "runnerExtras": {
+                    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+                    "impact": "serious",
+                    "help": "Elements must have sufficient color contrast",
+                    "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI"
+                }
+            },
+            {
+                "code": "color-contrast",
+                "type": "error",
+                "typeCode": 1,
+                "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI)",
+                "context": "<a class=\"wp-block-button__link has-ground-navy-color has-neutral-white-background-color has-text-color has-background\" href=\"/become-a-member/\">Become an Individual Member</a>",
+                "selector": "html > body > div:nth-child(9) > main > div:nth-child(10) > div > div:nth-child(2) > div:nth-child(1) > a",
+                "runner": "axe",
+                "runnerExtras": {
+                    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+                    "impact": "serious",
+                    "help": "Elements must have sufficient color contrast",
+                    "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI"
+                }
+            },
+            {
+                "code": "color-contrast",
+                "type": "error",
+                "typeCode": 1,
+                "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI)",
+                "context": "<a class=\"wp-block-button__link has-ground-navy-color has-neutral-white-background-color has-text-color has-background\" href=\"https://www.internetsociety.org/about-internet-society/organization-members/\">Join Us as an Organization Memb...</a>",
+                "selector": "html > body > div:nth-child(9) > main > div:nth-child(10) > div > div:nth-child(2) > div:nth-child(2) > a",
+                "runner": "axe",
+                "runnerExtras": {
+                    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+                    "impact": "serious",
+                    "help": "Elements must have sufficient color contrast",
+                    "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI"
+                }
+            },
+            {
+                "code": "color-contrast",
+                "type": "error",
+                "typeCode": 1,
+                "message": "Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI)",
+                "context": "<a class=\"wp-block-button__link has-ground-navy-color has-accent-yellow-background-color has-text-color has-background\" href=\"/get-involved/\">Get Involved</a>",
+                "selector": "html > body > div:nth-child(9) > main > div:nth-child(10) > div > div:nth-child(2) > div:nth-child(3) > a",
+                "runner": "axe",
+                "runnerExtras": {
+                    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+                    "impact": "serious",
+                    "help": "Elements must have sufficient color contrast",
+                    "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI"
+                }
+            }
+        ]
+    }
+}
