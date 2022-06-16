@@ -8,4 +8,6 @@ Used to view pa11y audits in a clean way.
 `npm run watch`
 
 ### Checking pa11y
+This command will output a results.json which is used inside of app.js.
+If using a threshold enter the number when running the command.
 `pa11y-ci --threshold 10` 
