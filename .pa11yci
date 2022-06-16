@@ -9,8 +9,7 @@
             ["json", { "fileName": "./results.json" }]
         ],
         "ignore": [
-            "notice",
-            "warning"
+       
         ],
         "runners": ["axe"]
     },

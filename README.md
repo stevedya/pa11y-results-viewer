@@ -6,3 +6,6 @@ Used to view pa11y audits in a clean way.
 
 ### Compiling js 
 `npm run watch`
+
+### Checking pa11y
+`pa11y-ci --threshold 10` 
