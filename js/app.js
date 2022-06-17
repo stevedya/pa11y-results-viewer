@@ -1,26 +1,56 @@
-import React from 'react'
+import React, { useMemo, useState } from 'react'
 import ReactDOM from "react-dom/client";
 import results from '../results.json'
 
 'use strict';
 
 const App = () => {
-    // console.log(Object.entries(results.results))
+    const [resultsArray, setResultsArray] = useState(Object.entries(results.results));
+
+    const filters = useMemo(() => {
+        const filteredItems = [];
+
+        // Not the most efficient but whatever
+        resultsArray.forEach((item) => {
+            item[1].forEach((x) => filteredItems.push(x.code))
+        })
+
+        // Remove duplicates from that large list
+        return [... new Set(filteredItems)]
+    }, [resultsArray])
+
     return (
         <section className="py-8 md:py-12">
-            <div className=''>
+            <div className='container'>
                 <div className="px-4 sm:px-6 lg:px-8">
                     <div className="sm:flex sm:items-center">
                         <div className="sm:flex-auto">
                             <h1 className="text-2xl md:text-3xl font-semibold text-gray-900">Results</h1>
                             <p className="mt-2 text-sm text-gray-700">A list of the results from your Pa11y test.</p>
-                            <p className="mt-2 text-lg text-red-600">Errors: {results.errors}</p>
+                            <div className="flex gap-6 divide-x">
+                                <p className="mt-2 text-lg text-gray-900 font-medium">Pages: {results.total}</p>
+                                <p className="mt-2 text-lg text-red-600 pl-6 font-medium">Errors: {results.errors}</p>
+                            </div>
+                            <hr className="my-6"/>
+
+
+                            <h3 className="font-medium mb-1 text-md mt-6">Filter by code</h3>
+                            <div className="flex flex-wrap gap-6 p-3 rounded-md bg-gray-50">
+                                {
+                                    filters.map((filter, index) => (
+                                           <div className="inline-flex items-center" key={index}>
+                                               <input className="accent-pink-500 mr-2" value={filter} type="checkbox"/>
+                                               <span className="text-gray-600">{filter}</span>
+                                           </div>
+                                    ))
+                                }
+                            </div>
                         </div>
                     </div>
-                    {Object.entries(results.results).map((result, index) => (
+                    {resultsArray && resultsArray.map((result, index) => (
                         <div className="mt-8">
                             <h2 className="text-xl md:text-2xl text-indigo-600 mb-2 font-bold">{result[0]}</h2>
-                            <div className="-mx-4 overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:-mx-6 md:mx-0 md:rounded-lg">
+                            <div className="-mx-4 overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:-mx-6 md:mx-0 md:rounded-lg" >
                                 <table className="min-w-full divide-y divide-gray-300">
                                     <thead className="bg-gray-50">
                                         <tr>
@@ -28,7 +58,7 @@ const App = () => {
                                             <th scope="col" className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 lg:table-cell">Code</th>
                                             <th scope="col" className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 sm:table-cell">Message</th>
                                             <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Context</th>
-                                            <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Runner</th>
+                                            <th scope="col" className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 lg:table-cell">Runner</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-gray-200 bg-white">
@@ -55,16 +85,18 @@ const LineItem = ({ item }) => {
             <td className="w-full max-w-0 py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:w-auto sm:max-w-none sm:pl-6">
                 {impact}
                 <dl className="font-normal lg:hidden">
-                    <dt className="sr-only">Code</dt>
+                    <dt className='text-xs font-bold mt-2'>Code</dt>
                     <dd className="mt-1 truncate text-gray-700">{code}</dd>
-                    <dt className="sr-only sm:hidden">Message</dt>
-                    <dd className="mt-1 truncate text-gray-500 sm:hidden">{message}</dd>
+                    <dt className='text-xs font-bold mt-2'>Message</dt>
+                    <dd className="mt-1 truncate text-gray-500 lg:hidden">{help}</dd>
+                    <dt className='text-xs font-bold mt-2'>Context</dt>
+                    <dd className="mt-1 truncate text-gray-500 lg:hidden bg-gray-100">{context}</dd>
                 </dl>
             </td>
             <td className="hidden px-3 py-4 text-sm text-gray-500 lg:table-cell">{code}</td>
             <td className="hidden px-3 py-4 text-sm text-gray-500 sm:table-cell">{help}</td>
-            <td className="hidden px-3 py-4 text-sm text-gray-500 sm:table-cell"><div className='bg-gray-100 p-1'>{context}</div></td>
-            <td className="hidden px-3 py-4 text-sm text-gray-500 sm:table-cell text-right">{runner}</td>
+            <td className="hidden px-3 py-4 text-sm text-gray-500 lg:table-cell"><div className='bg-gray-100 p-1'>{context}</div></td>
+            <td className="hidden px-3 py-4 text-sm text-gray-500 lg:table-cell text-right">{runner}</td>
         </tr>
     )
 }
